@@ -1,7 +1,7 @@
 /* ****************************************************************
  * @author: <MARK GERONE F. GROSPE>
- * @app name: <User's Section>
- * @app desc: <A program that accepts user's section and display them back>
+ * @app name: <User's Daily budget>
+ * @app desc: <A program that accepts user's daily budget and display the the product of of itself>
  * @history:
  *  - <yyyy/mm/dd> | <name>
  *      -- <description>
@@ -33,12 +33,13 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
 
-    string sectionName;
-    cout << "Please enter your section:" <<endl;
-    cin >> sectionName;
-    cout << "***Section: " << sectionName << "***" << endl;
-    
-    //include pause the program automatically exits after user input using VS Code
+    int daily_Budget;
+    cout << "Please enter your Daily Budget:" ;
+    cin >> daily_Budget;
+    cout << endl << "Your Daily budget is: " << daily_Budget << endl;
+    cout << "The product of your daily budget and itself is: " << daily_Budget * daily_Budget << endl;
+
+    //include pause the program automatically exits after user input using VS Code  
     system("pause");
 
     // ********************** DO NOT CHANGE **********************
