@@ -1,7 +1,7 @@
 /* ****************************************************************
  * @author: <MARK GERONE F. GROSPE>
- * @app name: <User's Daily budget>
- * @app desc: <A program that accepts user's daily budget and display the the product of of itself>
+ * @app name: <Accept Spaces>
+ * @app desc: <A program that supports spaces at user's input>
  * @history:
  *  - <yyyy/mm/dd> | <name>
  *      -- <description>
@@ -33,14 +33,16 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
 
-    int daily_Budget;
-    cout << "Please enter your Daily Budget:" ;
-    cin >> daily_Budget;
-    cout << endl << "Your Daily budget is: " << daily_Budget << endl;
-    cout << "The product of your daily budget and itself is: " << daily_Budget * daily_Budget << endl;
+    string name, password, address;
 
-    //include pause the program automatically exits after user input using VS Code  
-    system("pause");
+    cout << "Please enter the following:" << endl;
+    cout << "Your name: ";
+    getline (cin, name);
+    cout << "Password: ";
+    getline (cin, password);
+    cout << "Address: ";
+    getline (cin, address);
+    cout <<"\nHi, I am " << name << "." << " I live at " << address <<"." << endl;
 
     // ********************** DO NOT CHANGE **********************
     // Print a new line and ask user for any key before exiting
